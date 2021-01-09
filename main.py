@@ -20,5 +20,7 @@ def fib_not_recusive(n):
 	return y
 
 if __name__ == '__main__':
-	f()
-
+	fib_generated_by_recurse = [fib(i) for i in range(0,20)]
+	fib_generated_by_non_recurse = [fib_not_recusive(i) for i in range(0,20)]
+	print(fib_generated_by_recurse)
+	print(fib_generated_by_non_recurse)
